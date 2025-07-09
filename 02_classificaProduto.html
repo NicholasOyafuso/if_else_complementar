@@ -19,11 +19,11 @@
     if (isNaN(codigoProduto) || codigoProduto < 1 || codigoProduto > 20) {
         alert("Código inválido");
     }
-    if (codigoProduto === 1) {
+     if (codigoProduto === 1) {
         alert("Alimento não-perecível");
-    } else if ([2, 3, 4].includes(codigoProduto)) {
+    } else if (codigoProduto >=  2 && codigoProduto <= 4) {
         alert("Alimento perecível");
-    } else if ([5, 6].includes(codigoProduto)) {
+    } else if (codigoProduto === 5 || codigoProduto === 6) {
         alert("Vestuário");
     } else if (codigoProduto === 7) {
         alert("Higiene Pessoal");
